@@ -1,0 +1,479 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+header{
+	width: 100%;
+	height: 60px;
+	padding: 0 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: blue;
+	color: #fff;
+	z-index: 1000;
+}
+#logo{
+	font-size: 23px;
+}
+.nav{
+	width: 100%;
+	height: 50px;
+	padding: 0 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: whitesmoke;
+	z-index: 1000;
+
+}
+.nav ul{
+	position: relative;
+	display: flex;
+}
+.nav ul li{
+	position: relative;
+	list-style: none;
+}
+.nav ul li a{
+	position: relative;
+	padding: 10px 10px;
+	color: blue;
+	font-size: 17px;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+.nav ul li a:hover{
+	background: blue;
+	color: #fff;
+}
+.icons img{
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+}
+#head{
+	width: 100%;
+	height: 450px;
+	background-image: url(../media/backg.jpg);
+	background-size: cover;
+	background-position: center;
+	padding: 100px 50px;
+}
+#head h2{
+	text-align: center;
+	font-size: 150px;
+	font-weight: 700;
+	color: deepskyblue;
+}
+#head p{
+	text-align: center;
+	font-size: 20px;
+	font-weight: 700;
+	color: orange;
+}
+#gig{
+	width: 100%;
+	height: relative;
+	display: flex;
+	padding: 140px 0;
+	justify-content: space-around;
+	align-items: center;
+	background-image: url(../media/jj.jpg);
+	background-size: cover;
+	background-position: center;
+}
+#gigs{
+	width: 320px;
+	height: relative;
+	background-color: skyblue;
+}
+#gig h2{
+	text-align: center;
+	padding: 25px 0 0 0;
+	color: #000;
+}
+form{
+	padding: 20px 30px;
+}
+form a{
+	color: #000;
+	float: right;
+	text-decoration: none;
+	padding: 10px;
+}
+form a:hover{
+	color: blue;
+}
+input{
+	width: 100%;
+	padding: 15px;
+	margin: 10px 0;
+}
+textarea{
+	width: 100%;
+	height: 100px;
+	padding: 15px;
+	margin: 10px 0;
+}
+input[type=submit]{
+	background-color: deepskyblue;
+	color: #fff;
+}
+input[type=submit]:hover{
+	background-color: blue;
+	color: #000;
+}
+input:focus{
+	outline-color: blue;
+}
+button{
+	width: 100%;
+	padding: 15px;
+	margin: 10px 0;
+	background-color: deepskyblue;
+	color: #fff;
+}
+button:hover{
+	background-color: blue;
+	color: #000;
+}
+.alert{
+    color: red;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.desc{
+	float: right;
+	height: 100%;
+	padding: 20px 0;
+	color: #fff;
+	width: relative;
+	text-align: center;
+}
+.desc i{
+	color: #fff;
+}
+/* Dropdown button on hover & focus */
+.dropbtn:focus {
+  background-color: transparent;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: relative;
+  margin-top: 20px;
+ background-color: whitesmoke;
+ padding: 5px 10px;
+  min-width: relative;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 111111;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: #171a21;
+	text-decoration: none;
+	color: #fff;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+footer{
+	width: 100%;
+	padding: 50px 60px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: blue;
+	color: #fff;
+	z-index: 1000;
+}
+#about{
+	width: 100%;
+	height: relative;
+	padding: 30px 50px;
+}
+#about h3{
+	text-align: center;
+	color: blue;
+}
+#about p{
+	text-align: center;
+	padding: 5px 0;
+}
+#services{
+	width: 100%;
+	padding: 50px 60px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: whitesmoke;
+	color: #fff;
+	z-index: 1000;
+}
+#services i{
+	color: #000;
+	text-align: center;
+}
+#services h3{
+	color: blue;
+	text-align: center;
+}
+#services p{
+	color: #000;
+}
+.serv-1,.serv-2,.serv-3,.serv-4{
+	width: 25%;
+	height: relative;
+	text-align: center;
+	padding: 0 20px;
+}
+.grid-container{
+	width: 100%;
+	padding: 10px 30px;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: auto auto auto auto auto;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+.grid-container img{
+	width: 200px;
+	height: 150px;
+}
+h3{
+	text-align: center;
+	color: blue;
+	padding: 15px 0;
+}
+#contact{
+	width: 100%;
+	height: relative;
+	display: flex;
+	padding: 20px 140px;
+	justify-content: space-around;
+	align-items: center;
+}
+.timer{
+	width: 100%;
+	height: relative;
+	display: flex;
+	padding: 20px 300px;
+	justify-content: space-around;
+	align-items: center;
+}
+.tmr-1{
+	width: 70%;
+	height: 200px;
+	text-align: center;
+}
+.tmr-1 p{
+	font-size: 50px;
+	padding: 20px 0 0 0;
+}
+.tmr-1 a{
+	font-size: 20px;
+	text-decoration: none;
+	color: deepskyblue;
+	text-align: center;
+}
+.tmr-2{
+	width: 30%;
+	height: 200px;
+}
+.tmr-2 video{
+	width: 300px;
+	height: 100%;
+}
+
+.prof{
+	width: 100%;
+	height: relative;
+	display: flex;
+	padding: 50px 40px;
+	justify-content: space-around;
+	align-items: center;
+}
+td{
+	padding: 10px 20px;
+}
+.profff{
+	width: 400px;
+	height: relative;
+	background-color: deepskyblue;
+	padding: 30px 50px;
+}
+.editt{
+	width: 100%;
+	height: relative;
+	display: flex;
+	padding: 70px 40px;
+	justify-content: space-around;
+	align-items: center;
+}
+.editt form{
+	width: 400px;
+	background-color: deepskyblue;
+	height: relative;
+	height: 300px;
+	padding: 30px;
+}
+.editpp{
+	width: 100%;
+	height: relative;
+	display: flex;
+	padding: 70px 40px;
+	justify-content: space-around;
+	align-items: center;
+}
+.editpp form{
+	width: 400px;
+	background-color: deepskyblue;
+	height: relative;
+	padding: 30px;
+}
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-content p span{
+	color: blue;
+}
+.modal-content p{
+	padding: 10px 0;
+}
+input[type=radio]{
+	width: 5%;
+	float: left;
+}
+@media screen and (max-width:700px) {
+	.nav{
+		padding: 0 20px;
+	}
+	.nav ul li a{
+	position: relative;
+	padding: 10px 10px;
+	font-size: 10.5px;
+
+}
+footer{
+	flex-direction: column;
+	padding: 20px 60px;
+	height: 150px;
+	}
+	#head h2{
+	text-align: center;
+	font-size: 70px;
+	font-weight: 700;
+	color: deepskyblue;
+}
+.serv-1,.serv-2,.serv-3,.serv-4{
+	padding: 0 5px;
+}
+.grid-container{
+	width: 100%;
+	padding: 10px 30px;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: auto auto;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+#contact{
+	width: 100%;
+	height: relative;
+	display: flex;
+	padding: 20px 40px;
+	justify-content: space-around;
+	align-items: center;
+}
+.timer{
+	width: 100%;
+	height: relative;
+	display: flex;
+	padding: 20px 50px;
+	justify-content: space-around;
+	flex-direction: column;
+	align-items: center;
+}
+.tmr-1{
+	width: 100%;
+	height: 200px;
+	text-align: center;
+}
+.tmr-1 p{
+	font-size: 40px;
+	padding: 20px 0 0 0;
+}
+.tmr-1 a{
+	font-size: 20px;
+	text-decoration: none;
+	color: deepskyblue;
+	text-align: center;
+}
+.tmr-2{
+	width: 100%;
+	height: 200px;
+}
+.tmr-2 video{
+	width: 300px;
+	height: 100%;
+	margin-left: 60px;
+}
+}
